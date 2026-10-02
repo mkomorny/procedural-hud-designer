@@ -1,0 +1,46 @@
+HOW TO USE: hud-schematic-designer
+==================================
+
+PURPOSE
+  Procedurally generates precision mathematical vector graphics (SVGs) for
+  sci-fi HUDs, avionics radar reticles, telemetry frames, and 19-inch audio
+  synthesizer rack faceplates with interactive HTML previews.
+
+CAPABILITIES
+  - Component 1: Radar Reticle (360-degree ticks, range rings, azimuth degrees, sweep arm)
+  - Component 2: Telemetry Viewport (Beveled corner brackets, caliper scales, coordinates)
+  - Component 3: 19" Audio Rack Faceplate (Mounting ears, potentiometer knobs, VU reduction meters)
+  - 5 Built-in Color Themes: Avionics (green), Amber (terminal), Cyan (cyber), Crimson (alert), Audio Rack (hardware)
+  - Generates standalone .svg file plus interactive glowing HTML preview file
+
+USE CASES
+  - Building audio synthesizer UI skins or Max for Live device faceplates
+  - Creating sci-fi dashboards, telemetry overlays, or cyberdeck widgets
+  - Technical blueprint borders for documentation or apps
+
+IDEAS
+  - Animate the radar sweep arm or telemetry frame using canvas-svg-animator
+  - Combine multiple 19-inch rack units into a virtual studio equipment stack
+  - Export vector coordinates into Max MSP, JUCE, or Electron canvas components
+
+PROMPTS YOU CAN PASTE
+  Design a glowing radar reticle for my avionics dashboard.
+
+  Create a sci-fi telemetry HUD frame with corner brackets in cyan.
+
+  Generate an audio rack faceplate with knobs and VU meters for my synth.
+
+  Build a technical oscilloscope border in amber.
+
+EXAMPLE FLOW
+  You:   Design an audio rack faceplate with knobs and VU meters in hardware theme.
+  Model: [Generates 19-inch 2U rack chassis SVG]
+         - SVG Asset: ./audio_rack_faceplate.svg
+         - Interactive Preview: ./audio_rack_faceplate_preview.html
+         [Provides clickable links to view in browser or copy SVG]
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  1. Determine component type (radar reticle, viewport frame, or 19" audio rack)
+  2. Apply selected aesthetic color palette (avionics, amber, cyan, crimson, or audio-rack)
+  3. Procedurally compute vector geometries, mounting ears, dial ticks, and silkscreen labels
+  4. Generate both clean standalone SVG and interactive glowing HTML visual preview
